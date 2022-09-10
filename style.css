@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/171fc7bd-3978-44d2-819c-ee56cff1fa60/d4yesjq-80cfd763-e4a1-43c5-9d90-5b7be67ddfb9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3MWZjN2JkLTM5NzgtNDRkMi04MTljLWVlNTZjZmYxZmE2MFwvZDR5ZXNqcS04MGNmZDc2My1lNGExLTQzYzUtOWQ5MC01YjdiZTY3ZGRmYjkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mbH37W-DuI-AL-Pp7fCPeqSUX7OThp1znehNYMN_c_I");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.clock-dial{
+    width: 500px;
+    height: 500px;
+    border: 20px solid #00818a;
+    border-radius: 50%;
+    margin: 0 auto;
+position: relative;
+ background-image: url("https://www.pngkey.com/png/full/149-1491330_download-sonic-the-hedgehog-sonic-the-hedgehog-transparent.png");
+background-size:70%;
+background-repeat: no-repeat;
+background-position: center;
+
+background-color: #55aabb;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: #283149;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.hour {
+    font-style: 30px;
+    font-weight: bold;
+    color: #283149;
+    position: absolute;
+}
+
+.hour-1{
+    top: 40px;
+    right: 130px;
+}
+.hour-2{
+    top: 125px;
+    right: 45px;
+}
+.hour-3{
+    top: 235px;
+    right: 10px;
+}
+.hour-4{
+    top: 345px;
+    right: 45px;
+}
+.hour-5{
+    top:430px;
+    right: 130px;
+}
+.hour-6{
+    bottom: 10px;
+    right: 240px;
+}
+.hour-7{
+    top: 430px;
+    left: 130px;
+}
+.hour-8{
+    top: 345px;
+    left: 45px;
+}
+.hour-9{
+    top: 235px;
+    left: 10px;
+}
+.hour-10{
+    top: 125px;
+    left: 45px;
+}
+.hour-11{
+    top: 40px;
+    left: 130px;
+}
+.hour-12{
+    top: 10px;
+    left: 235px;
+}
+
+
+
+
+
+
+
+.sec-hand,.min-hand,.hr-hand{
+  position: absolute;
+}
+.sec-hand, .sec{
+  height: 380px;
+  width: 380px;
+  z-index: 6;
+}
+.min-hand, .min{
+  height: 140px;
+  width: 140px;
+  z-index: 5;
+}
+.hr-hand, .hr{
+  height: 110px;
+  width: 110px;
+  z-index: 4;
+}
+.sec,.min,.hr{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.sec:before{
+  position: absolute;
+  content: 'second';
+  height: 210px;
+  width: 5px;
+  background: #3498db;
+}
+.sec:after{
+  position: absolute;
+  content: '';
+  height: 35px;
+  width: 30px;
+  background: #3498db;
+  top: 200px;
+  border-radius: 5px;
+  
+}
+.min:before{
+  position: absolute;
+  content: 'minute';
+  width: 6px;
+  top: -70px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 128px solid #e95949;
+}
+.min:after{
+  position: absolute;
+  content: '';
+  width: 6px;
+  top: 80px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 30px solid #e95949;
+}
+.hr:before{
+  position: absolute;
+  content: 'Hour';
+  width: 5px;
+  top: -80px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 200px solid #303030;
+}
+.hr:after{
+  position: absolute;
+  content: '';
+  width: 3px;
+  top: 64px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 15px solid #303030;
+}
